@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh1</title>
+</head>
+<body>
+
+    <!-- Example 1 -->
+    <script>
+        alert('Selamat Belajar!')
+   
+
+    // Example 2
+        var x = 5
+        var y = 2
+        z = x*y
+        alert (z)
+    
+    // Example 3
+        var x = 8
+        var y = 9
+        x += 8
+        alert (x)
+    
+    // Example 4
+        var x = 5
+        var y = 2
+        if(x > y){
+            alert("x lebih besar dari y")
+        }
+
+    // Example 5
+        var x = 5
+        var y = 2
+        if(x > y){
+            alert("x lebih besar dari y")
+        }
+
+    // Example 6
+        function inform(){
+            alert("Lanjutkan ke step berikutnya")
+        }
+
+    // Example 8
+        var a = "Welcome to my page"
+        document.write(a.toUpperCase().bold())
+        
+    // Example 9
+        function checkmail(email){
+            if(email.indexOf('@') != -1 && email.indexOf('.') != -1){
+                alert('Apakah penulisan alamat email sudah benar?')
+            }
+            else{
+                alert('Penulisan salah')
+            }
+        }
+
+    // Example 10
+        function bukaWindow(){
+            window.open("http:/www.youtube.com", "youtube", "width=400, height=300, toolbar=1")
+        }
+
+    // Example 11
+        var x = window.confirm("Are you sure about that?")
+        if (x){
+            window.alert("Go to the job")
+        }
+        else{
+            window.alert("Repeat until success!")
+        }
+    </script>
+
+    <!-- Example 11 -->
+    <script>
+        var y = window.prompt("Masukkan nama anda: ")
+        window.alert(y)
+    </script>
+    <!-- Example 6 -->
+    <form>
+        <input type="button" name="test" value="Click" onclick="inform()">
+    </form>
+
+    <!-- Example 7 -->
+    <form name="go">
+        <input type="radio" name="c1" onclick="document.bgColor='lightblue'">
+        <input type="radio" name="c2" onclick="document.bgColor='lightyellow'">
+        <input type="radio" name="c3" onclick="document.bgColor='lightgreen'">
+    </form>
+
+    <!-- Example 9 -->
+    <form name="test" onSubmit="checkmail(this.test2.value);return false">
+        <input type="text" size="20" name="test2">
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- Example 10 -->
+    <input type="button" onclick="bukaWindow()" value="open">
+</body>
+</html>
